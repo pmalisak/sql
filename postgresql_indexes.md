@@ -1,4 +1,4 @@
-#PostgreSQL indexes
+# PostgreSQL indexes
 
 ```postgresql
 CREATE TABLE foo_v2 (
@@ -28,7 +28,7 @@ SELECT
 FROM generate_series(1, 100);
 ```
 
-There is only 10 records with status 'test'.
+There is only 100 records with status 'test'.
 
 ```postgresql
 explain analyze select id from foo_v2 where status = 'test' limit 20;
